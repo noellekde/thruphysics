@@ -1,1 +1,1 @@
-Why are you downloading this?
+Thruphysics is complex sometimes, i recommend knowing the basics. 
