@@ -129,18 +129,15 @@
 <body>
     <div class="container">
         <div class="header-bar">
-            <a href="https://noellekde.github.io/thruphysics" class="back-btn">&larr; Home</a>
+            <a href="../" class="back-btn">&larr; Home</a>
             <div class="title">Advanced Calculation Mode (amode)</div>
         </div>
 
         <div class="workspace">
             <div class="pane">
-                <span class="pane-label"> // Equations</span>
-                <textarea id="calcInput">// idk
-v += 9.81 * dt;        // Apply gravity acceleration
-y += v * dt;           // Update position based on velocity
-
-// Ground bounce collision with energy loss
+                <span class="pane-label">Manual Physics / Math Equations</span>
+                <textarea id="calcInput">v += 9.81 * dt;
+y += v * dt;
 if (y > 140) {
     y = 140;           
     v = -v * 0.75;     
@@ -190,11 +187,9 @@ if (y > 140) {
                     v = res.v;
                     t += dt;
 
-                    // Clear and draw canvas graphics
                     ctx.fillStyle = "#111";
                     ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-                    // Render grid coordinates
                     ctx.strokeStyle = "#222";
                     ctx.lineWidth = 1;
                     ctx.beginPath();
@@ -206,7 +201,6 @@ if (y > 140) {
                     }
                     ctx.stroke();
 
-                    // Draw physical point/ball mapped to coordinate space
                     let renderX = canvas.width / 2;
                     let renderY = y;
 
