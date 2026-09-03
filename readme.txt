@@ -1,1 +1,1 @@
-Thruphysics is complex sometimes, i recommend knowing the basics. 
+This contains the **mobile** builds of Thruphysics.
